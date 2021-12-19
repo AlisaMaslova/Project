@@ -1,0 +1,33 @@
+main p{
+  text-indent: 40px;
+}
+
+input{
+  width: 12vw;
+  height: 7vw;
+  font-size: 6vw;
+  text-align: center;
+}
+
+main form{
+  text-align: center;
+}
+
+.btn p{
+  font-size: 1.5vw;
+  text-indent: 0;
+  text-align: center;
+
+}
+.btn{
+    width: 13vw;
+    height: 5vw;
+    background: #fcac45;
+    color: white;
+    margin-top: 2vw;
+  
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(241, 104, 12);
+}

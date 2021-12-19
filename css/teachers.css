@@ -1,0 +1,176 @@
+
+
+.block{
+
+    width: 89vw;
+
+    height: 20vw;
+
+    background-color: #ffffff;
+
+    margin: 1vw 1vw 1vw 1vw;
+
+    padding-right: 1vw;
+
+    outline: 1px solid #024d44;
+
+    border-radius: 10px;
+
+    display: block;
+
+  }
+
+  
+
+  .block1{
+
+    width: 89vw;
+
+    height: 20vw;
+
+    background-color: #ffffff;
+
+    margin: 1vw 1vw 1vw 1vw;
+
+    padding-left: 1vw;
+
+    outline: 1px solid #024d44;
+
+    border-radius: 10px;
+
+    display: block;
+
+  }
+
+  
+
+  .block img{
+
+    margin-top: 1vw;
+
+    margin-bottom: 1vw;
+
+    margin-left: 1vw;
+
+    margin-right: 1.5vw;
+
+    vertical-align: top;
+
+    float: left;
+
+    width:18vw;
+
+    height:18vw;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    border-radius: 10px;
+
+  }
+
+  
+
+  .block1 img{
+
+    float: right;
+
+    vertical-align: top;
+
+    margin-top: 1vw;
+
+    margin-bottom: 1vw;
+
+    margin-left: 1vw;
+
+    margin-right: 1vw;
+
+    width:18vw;
+
+    height:18vw;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    border-radius: 10px;
+
+  }
+
+  
+
+.text{
+
+  margin-top:1.5vw;
+
+  font-size: 1.3vw;
+
+  text-align: justify;
+
+}
+
+  
+
+  .h1{
+
+    font-size: 2.5vw;
+
+    font-family: Neucha;
+
+    text-align: center;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+  }
+
+
+
+  .h3{
+
+    font-size: 1.5vw;
+
+    font-family: Mons;
+
+    text-align: center;
+
+    font-weight: bold;
+
+  }
+
+
+
+  .h4{
+
+    font-size: 1.2vw;
+
+    font-family: Mons;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    margin-bottom:0.5vw;
+
+   
+
+  }
+
+  main p{
+
+    text-align: center;
+
+  }
+
+@media only screen and (max-width: 480px)  {
+.text{
+font-size: 1.5vw;
+}
+ main p{
+
+    text-align: center;
+text-indent:0;
+
+  }
+
+
+
+}

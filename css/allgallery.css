@@ -1,0 +1,25 @@
+
+.link{
+  margin-left: 20vw;
+  margin-bottom: 5vw;
+  background: #32c0b9;
+  padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+  font-size: 1.5vw;
+ 
+}
+.link a {
+  display: block;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.link img{
+  width:15vw;
+  height: 15vw;
+}
+

@@ -1,0 +1,46 @@
+#sl{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background: #f5ffd0;
+  }
+ 
+  .content
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
+  #slider
+  {
+    width: 100%;
+    height: 9vw;
+   margin: 0;
+   padding:0;
+    background-image: url(/slider/filmstrip1.jpg);
+    background-size: 100% 100%;
+    animation: slider 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slider
+  {
+    to{
+        background-position: 2000px;
+      }
+  }
+  
+  @media only screen and (max-width: 480px)  {
+    #slider
+  {
+    width: 250%;
+    height: 22vw;
+   margin: 0;
+   padding:0;
+    background-image: url(/slider/filmstrip1.jpg);
+    background-size: 100% 100%;
+    animation: slider 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }}

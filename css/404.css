@@ -1,0 +1,23 @@
+@font-face {
+	font-family: Mons;
+	src: url('/fonts/Montserrat-Regular.ttf');
+}div {
+  text-align: center; font-family: Mons;
+}
+
+button{
+  display: inline-block; 
+  background: #9fa4a8; 
+  color: #fff; 
+  padding: 1rem 1.5rem; 
+  text-decoration: none;
+  border-radius: 3px; 
+}
+
+a{
+  color: white;
+  text-decoration: none; font-size: 20px;
+}
+p{
+  font-size: 20px; 
+}

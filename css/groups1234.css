@@ -1,0 +1,19 @@
+img{
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  width:40vw;
+
+  height:28vw;
+
+}
+
+header img{
+box-shadow:none;
+
+}
+
+
+
+
+

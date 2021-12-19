@@ -1,0 +1,193 @@
+main p{
+  text-indent: 40px;  
+}
+
+
+
+.groups{
+
+  text-align: center;
+
+  margin-bottom: 10vw;
+
+}
+
+
+
+.sign {
+
+  float: left;
+
+  border: 1px solid #333;
+
+  padding: 2vw;
+
+  margin: 0vw 1vw 1vw 1vw;
+
+  background: #f0f0f0; 
+
+  margin-right: 3vw;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+ }
+
+
+
+.sign img{
+
+    width: 16vw;
+
+    height:20vw;
+
+    margin-bottom: 1vw;
+
+}
+
+
+
+ .sign figcaption {
+
+  text-align: center;
+
+  font-size: 1.1vw;
+
+ }
+
+
+
+ .sign1 {
+
+  float: right;
+
+  border: 1px solid #333;
+
+  padding: 2vw; 
+
+  margin: 0vw 1vw 1vw 1vw;
+
+  background: #f0f0f0; 
+
+  margin-left: 3vw;
+
+  margin-top: 2vw;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+ }
+
+
+
+.sign1 img{
+
+  width: 16vw;
+
+  height:20vw;
+
+  margin-bottom: 1vw;
+
+}
+
+
+
+
+
+ .sign1 figcaption {
+
+ 
+
+  text-align: center;
+
+  font-size: 1.1vw;
+
+  
+
+ }
+
+
+
+ .signjust {
+
+  float: left; 
+
+  border: 1px solid #333; 
+
+  padding: 1vw; 
+
+  background: #f0f0f0; 
+
+  margin: 2vw 3vw 2vw 5vw;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  text-align: center;
+
+ }
+
+.groups{
+
+  text-align: center;
+
+}
+
+ .signjust img{
+
+   width: 20vw;
+
+   height: 14vw;
+
+ }
+
+ .signjust figcaption {
+
+  text-align: center;
+
+  font-size: 1.1vw;
+
+ }
+
+ .groupsall{
+
+  text-align: center;
+
+  margin-top: 3vw;
+
+ }
+
+.groupsall img{
+
+  width:35vw;
+
+  height: 22vw;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+
+
+@media only screen and (max-width: 480px)  {
+
+ .sign figcaption {
+
+  text-align: center;
+
+  font-size: 1.6vw;
+
+ }
+.sign1 figcaption {
+
+  text-align: center;
+
+  font-size: 1.6vw;
+
+ }
+.signjust figcaption {
+
+  text-align: center;
+
+  font-size: 1.6vw;
+
+ }
+
+}

@@ -1,0 +1,105 @@
+main img{
+
+  padding: 0; 
+
+  margin: 0 1vw 1vw 1vw; 
+
+  width:40vw;
+
+  height:25vw;
+
+}
+
+ .signjust {
+
+  float: left;
+
+  text-decoration: none;
+
+  margin: 1vw 1vw 1vw 11.5vw;
+
+ }
+
+
+
+ .signjust img{
+
+  width:23vw;
+
+  height:17vw;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  margin: 0 0.5vw 1vw 0.5vw; 
+
+
+
+ }
+
+ .signjust figcaption {
+
+  font-size: 1.5vw;
+
+  text-align: center;
+
+  text-decoration: none;
+
+ }
+
+
+
+ .signjust a{
+
+   text-decoration: none;
+
+   color: black;
+
+ }
+
+.groups{
+
+  margin-left: 4.5vw;
+
+  margin-right: 4.5vw;
+
+}
+
+
+
+ a:hover{
+
+   color:#ff0080;
+
+ }
+
+
+
+ h2 img{
+
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+ }
+
+
+@media only screen and (max-width: 480px)  {
+
+
+.signjust {
+
+  float: left;
+
+  text-decoration: none;
+
+  margin: 1vw 1vw 1vw 7.5vw;
+
+ }
+
+  .signjust img{
+    width:30vw;
+    height:21vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 1vw 0.5vw 1vw 0.5vw; 
+  
+   }
+ }
+ 
