@@ -2,11 +2,9 @@
 
 include '../function.php';
 
+$dir =  "/photogallery/photo/odessa2019/small/";
 
-
-$dir =  "/photogallery/photo/bitvachoir2018/small/";
-
-$bdir =  "/photogallery/photo/bitvachoir2018/big/";
+$bdir =  "/photogallery/photo/odessa2019/big/";
 
 $images = get_images($_SERVER['DOCUMENT_ROOT'] . $dir);
 
@@ -63,6 +61,7 @@ $pagination = pagination($page, $count_pages);
 <meta charset="utf-8">
 
 <title>Хор "Скворушка"</title>
+
 <meta name="viewport" content="width=device-width">
 
 <meta name="keywords" content="хор, Скворушка, вокал, музыка, хоровое пение, детское творчество, Украина, Харьков">
@@ -79,9 +78,11 @@ $pagination = pagination($page, $count_pages);
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/html/header.html"; ?>
 
+
+
     <main>
 
-    <h1>Хор "Скворушка" на Битві хорів 2018 рік</h1>
+    <h1>Поїздка хору "Скворушка" до Одеси 2019 рік</h1>
 
     <div class="wrapper">
 
@@ -101,7 +102,7 @@ $pagination = pagination($page, $count_pages);
 
                  <img class="front" src="<?=$dir . $images[$j]?>" alt="">
 
-                 <div class="back">Фото <?=$i?></div>
+                 <span class="back">Фото <?=$i?></span>
 
                  </a>
 
@@ -127,7 +128,7 @@ $pagination = pagination($page, $count_pages);
 
                 <?php endif; ?>
 
-     </div><br><br><br>
+     </div>
 
 </div>
 
@@ -139,9 +140,17 @@ $pagination = pagination($page, $count_pages);
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
-    <script src="/js/lightbox-plus-jquery.js"></script>
+<script src="/js/lightbox-plus-jquery.js"></script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
 
