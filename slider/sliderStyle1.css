@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background: #f5ffd0;
+}
+
+.conten
+{
+    width: 100%;
+    margin: auto;
+}
+
+#slider
+{
+    width: 2000px;
+    height: 200px;
+
+    background-image: url(/slider/filmstrip.jpg);
+    background-size: 100% 100%;
+
+    animation: slider 30s infinite;
+}
+
+@keyframes slider
+{
+    to{
+        background-position: 2000px;
+      }
+}
