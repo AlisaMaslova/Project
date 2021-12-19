@@ -1,1 +1,198 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
 
+<header>
+      <img src="/pictures/Logo.png" align="left">
+<div><p>Народний художній колектив<br> хор "Скворушка"</p></div>
+
+
+
+<nav>
+  <div class="menu-popup">
+    <input type="checkbox" name="menu" id="btn-menu"/>
+    <label for="btn-menu" class="menu-btn"><a>Меню</a> </label>
+    <ul id=sidebar> 
+      <div id="men1">
+    <a class="butn" input type="button" onclick="history.back();">Назад</a>
+    <a href="/index.php">Головна</a></div>
+    <div id="men2">
+    <div id="container">
+    <button class="dropdown-btn"><a>Про нас</a> 
+      <i class="fa fa-caret-down"></i>
+    </button> 
+
+    <div class="dropdown-container">
+      <a href="/history.php">Сторінками історії</a>
+      <a href="/teachers.php">Наші педагоги</a>
+      <a href="/achivements.php">Наші досягнення</a>
+      <a href="/concerts.php">Концертне життя</a>
+      <a href="/graduates.php">Видатні випускники</a>
+    </div></div>
+    <div id="container">
+    <button class="dropdown-btn1"><a>Групи</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container1">
+      <a href="allgroups.php">Усі</a>
+      <a href="1groups.php">Підготовча</a>
+      <a href="2groups.php">Молодша</a>
+      <a href="3groups.php">Середня</a>
+      <a href="4groups.php">Старша</a>
+    </div></div>
+
+    <div id="container">
+    <button class="dropdown-btn2"><a>Галерея</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container2">
+      <a href="/photogallery.php">Фото</a>
+      <a href="/videogallery.php">Відео</a>
+    </div></div></div>
+
+    <button id="popup" href="javascrript:void(0);"><p>Записатися</p></button>
+    <a href="/news.php">Новини</a>
+    <a href="/contact.php">Контакти</a></ul>
+</div>
+</nav>
+</header>
+
+<button class="upward" onClick="scrollTopTop()"></button>
+
+<script>
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle("active", window.scrollY>300)
+    })
+    function scrollTopTop(){
+        window.scrollTo({
+            top:0,
+            behavior:'smooth'
+        })
+    } 
+</script>
+
+<script>
+    onload = function ()
+    {
+    for (var lnk = document.links, j = 0; j < lnk.length; j++)
+    if (lnk [j].href == document.URL) lnk [j].style.cssText = 'color:#024d44;text-decoration:underline;text-decoration-style:double;';
+    }
+</script>
+
+
+<div class="popWindow subscribe_window">
+  <p class="subcsribe-text">Долучайтесь до нашого колективу!</p>
+  <form class="subscribe-form" autocomplete="off">
+  <input type="hidden" name="project_name" value="skvorushka.orgfree.com">
+  <input type="hidden" name="admin_email" value="skvorushka.choir@gmail.com">
+<input type="hidden" name="form_subject" value="заявка на запись">
+<div>
+<input type="text" id="name" name="name" placeholder=" " required>
+<label for="name">Ім'я <span>*</span></label>
+</div>
+<div>
+<input type="text" id="age" name="age" placeholder=" " required>
+<label for="age">Вік <span>*</span></label>
+</div>
+
+<div>
+<input id="phone" type="tel" placeholder="+38(0XX)-XXX-XX-XX" pattern="^\+380\d{9}$" name="phone" required>
+<label for="phone">Телефон <span>*</span></label> 
+</div>
+    <div class="aligncenter">
+      <button type="submit" class="btn"><i class="fa fa-check" aria-hidden="true"></i> Записатися</button>
+    </div>
+    <div class="req-fields"><sup>*</sup> обов'язкові поля</div>
+  </form>
+  <div class="close-btn">&times;</div>
+</div>
+
+<div class="popWindow thank_you_window">
+  <p class="thank_you_title">Дякуємо!<br>Ваша заявка була відправлена!</p>
+  <p class="thank_you_body">Вам обов'язково зателефонують!</p>
+  <div class="close-btn">&times;</div>
+</div>
+
+
+
+<script>
+ 
+ $(".dropdown-btn").click(function() {
+  $('.dropdown-container').toggle();
+  $('.dropdown-container1').fadeOut();
+  $('.dropdown-container2').fadeOut();
+
+});
+$(document).on('click', function(e) {
+  if (!$(e.target).closest("#container").length) {
+    $('.dropdown-container').hide();
+  }
+  e.stopPropagation();
+});
+
+$(".dropdown-btn1").click(function() {
+  $('.dropdown-container1').toggle();
+  $('.dropdown-container').fadeOut();
+  $('.dropdown-container2').fadeOut();
+});
+$(document).on('click', function(e) {
+  if (!$(e.target).closest("#container").length) {
+    $('.dropdown-container1').hide();
+  }
+  e.stopPropagation();
+});
+
+$(".dropdown-btn2").click(function() {
+  $('.dropdown-container2').toggle();
+  $('.dropdown-container1').fadeOut();
+  $('.dropdown-container').fadeOut();
+});
+$(document).on('click', function(e) {
+  if (!$(e.target).closest("#container").length) {
+    $('.dropdown-container2').hide();
+  }
+  e.stopPropagation();
+}); 
+</script>
+
+<script>
+var $popOverlay = $(".popup-overlay");
+var $popWindow = $(".popWindow");
+var $subscribeWindow = $(".subscribe_window");
+var $popThankYouWindow = $(".thank_you_window");
+var $popClose = $(".close-btn");
+var $popUp = $("#popup");
+
+ $popUp.on('click', function(){
+    $popOverlay.fadeIn();
+    $subscribeWindow.fadeIn();
+  });
+ 
+  $popClose.on('click', function(){
+    $popOverlay.fadeOut();
+    $popWindow.fadeOut();
+  });
+ 
+  $(function(){
+    $(document).on('click', function(event) {
+      if ($(event.target).closest($popUp).length) return;
+      if ($(event.target).closest($popWindow).length) return;
+      $popOverlay.fadeOut();
+      $popWindow.fadeOut();
+      event.stopPropagation();
+    });
+  });
+
+$(".subscribe-form").submit(function() {
+var th = $(this);
+$.ajax({
+type: "POST",
+url: "mail.php",
+data: th.serialize()
+}).done(function() {
+$subscribeWindow.fadeOut();
+$popThankYouWindow.fadeIn();
+});
+return false;
+});
+</script>
