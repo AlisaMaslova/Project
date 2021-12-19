@@ -1,0 +1,918 @@
+@font-face {
+
+	font-family: Neucha;
+
+	src: url('/fonts/Neucha.ttf');
+
+}
+
+main{
+
+    display: inline-block;
+
+    position: relative;
+
+    margin: 0px 3vw;
+
+    margin-top:  10vw; 
+
+    overflow: hidden;
+
+    
+
+  }
+
+    
+
+  main .video  {
+
+    display:block;
+
+    margin:0 auto;
+
+    box-shadow: 0 0 12px 0 #000;
+
+    width: 56vw;
+
+    height:28vw;
+text-align:center;
+
+    }
+
+main .video iframe{
+ width: 56vw;
+
+    height:28vw;
+
+
+}
+   @media only screen and (max-width: 480px)  { 
+main .video{
+
+        width: 76vw;
+
+        height: 40vw;
+
+
+
+    display:block;
+
+    margin:0 auto;
+
+    box-shadow: 0 0 12px 0 #000;
+
+
+
+      }
+
+main .video iframe{
+width: 76vw;
+
+        height: 40vw;
+
+
+}}
+
+
+
+  /* 
+
+
+
+
+
+.subscribe-form label {
+
+  color: #fff;
+
+  position: absolute;
+
+  top: 0.7vw;
+
+  left: -2.5vw;
+
+  font-size: 1vw;
+
+}
+
+.subscribe-form label span {
+
+  color: #ffba00;
+
+}
+
+.subscribe-form input:focus + label {
+
+  left: -1vw;
+
+  font-size: 1.3vw;
+
+}
+
+.subscribe-form input:invalid {
+
+  box-shadow: none;
+
+}
+
+.subscribe-form input:valid {
+
+  border: 1px solid #161613;
+
+}
+
+.subscribe-form input:valid + label {
+
+  left: -62px;
+
+  font-size: 12px;
+
+}
+
+.subscribe-form input:invalid:not(:focus):not(:placeholder-shown) {
+
+  border: 1px solid #d3362a;
+
+}
+
+.subscribe-form input:invalid:not(:focus):not(:placeholder-shown) + label {
+
+  left: -62px;
+
+  font-size: 12px;
+
+}
+
+@media only screen and (max-width : 480px) {
+
+  .subscribe_window{
+
+    top: 5%;
+
+    margin-top: 0;
+
+  }
+
+  .subscribe_window .subcsribe-text{
+
+    padding: 0;
+
+  }
+
+  .subscribe-form input:focus + label{
+
+    left: 20px;
+
+    top: -18px;
+
+  }
+
+  .subscribe-form input:valid + label{
+
+    left: 20px;
+
+    top: -18px;
+
+  }
+
+  .subscribe-form input:invalid:not(:focus):not(:placeholder-shown) + label{
+
+    left: 20px;
+
+    top: -18px;
+
+  }
+
+}
+
+ 
+
+/* Стили для текста внутри благодарственного окна после успешной отправки 
+
+.thank_you_window .thank_you_title {
+
+  font-family: "Titillium Web", sans-serif;
+
+  color: #fff;
+
+  font-size: 32px;
+
+  line-height: 50px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+}
+
+.thank_you_window .thank_you_body {
+
+  font-family: "Titillium Web", sans-serif;
+
+  color: #fff;
+
+  font-size: 24px;
+
+  font-weight: 400;
+
+}
+
+    
+
+
+
+/* Стили для затемнения фона 
+
+.popup-overlay {
+
+  display: none;
+
+  position: fixed;
+
+  left: 0;
+
+  top: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background: rgba(255, 186, 0, 0.7);
+
+  z-index: 100000000;
+
+}*/
+
+ 
+
+/* Основные стили для всплывающего окна */
+
+.popWindow{
+
+  display: none;
+
+  background-color: #0baa9d;
+
+  color: #fff;
+
+  width: 20vw;
+
+  height:30vw;
+
+  position: fixed;
+
+  bottom:0;
+
+  right:0;
+
+  text-align: center;
+
+  border: 2px solid #023531;
+
+  padding-left:3.7vw;
+
+  border-radius: 8px;
+
+  z-index:1000000000;
+
+}
+
+/* Стили для текста внутри благодарственного окна после успешной отправки */
+
+.thank_you_window .thank_you_title {
+
+  font-family: "Titillium Web", sans-serif;
+
+  color: #fff;
+
+  font-size: 1.8vw;
+
+  margin-bottom: 2vw;
+
+  margin-top:3vw;
+
+  text-align: center;
+
+  margin-left:-3.5vw;
+
+  margin-right:0.5vw;
+
+  text-indent: 0;
+
+}
+
+.thank_you_window .thank_you_body {
+
+  font-family: Mons;
+
+  color: #fff;
+
+  font-size: 1.5vw;
+
+  margin-left:-3.5vw;
+
+  margin-right:1.3vw;
+
+  text-indent: 0;
+
+  text-align: center;
+
+}
+
+/* Стили для адаптивности всплывающего окна */
+
+@media only screen and (max-width : 800px) {
+
+  .popWindow {
+
+    margin-left: -45%;
+
+  }
+
+}
+
+/* Кнопка закрыть всплывающее окно */
+
+.close-btn {
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  font-size: 4vw;
+
+  line-height: 2vw;
+
+  cursor: pointer;
+
+  color: rgb(100, 99, 99);
+
+  padding: 0.5vw;
+
+  margin-bottom:1.5vw;
+
+}
+
+/* Просто текст */
+
+.subscribe_window .subcsribe-text {
+
+  font-size: 1.2vw;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: #fff;
+
+  margin: 2.5vw 0;
+
+  position: relative;
+
+  padding: 0;
+
+  z-index: 10;
+
+  text-indent: 0vw;
+
+  font-weight: bold;
+
+}
+
+/* Текст */
+
+.subscribe_window .req-fields {
+
+  color: white;
+  text-align: center;
+
+  font-size: 1vw;
+
+}
+
+/* Стили формы */
+
+.subscribe-form {
+
+  width: 100%;
+
+  max-width: 300px;
+
+  margin: 0 auto;
+
+}
+
+.subscribe-form div {
+
+  position: relative;
+
+}
+
+.subscribe-form input {
+
+  border: 1px solid #3d3d3d;
+
+  width: 15vw;
+
+  height:2vw;
+
+  font-family: Mons;
+
+  font-size: 1.2vw;
+
+  padding: 0.3vw 0.5vw;
+
+  margin-bottom: 1.3vw;
+
+  margin-left:1vw;
+
+  outline: none;
+
+  background: #2e2e2b;
+
+  color: #fff;
+
+  border-radius: 4px;
+
+}
+
+.btn {
+
+  color: #fff;
+
+  background-color: #fcac45;
+
+  text-align: center;
+
+  font-size: 1.5vw;
+
+  border: 1px solid #fcac45;
+
+  box-shadow: none;
+
+  display: inline-block;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  -webkit-transition: 0.4s;
+
+  transition: 0.4s;
+
+}
+
+.btn:hover, .btn:focus {
+
+  background-color: #fcac45;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+}
+
+.subscribe-form .btn {
+
+  font-size: 1.8vw;
+
+  
+
+  border: none;
+
+  width: 18vw;
+
+  height:4vw;
+
+  margin-top:1.5vw;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  outline: none;
+
+  border-radius: 4px;
+
+}
+
+.subscribe-form .btn:hover {
+
+  background-color: #f3601c;
+
+}
+
+.subscribe-form .btn i {
+
+  font-size: 1.8vw;
+
+  margin-right: 0.5vw;
+
+}
+
+.subscribe-form label {
+
+  color: #fff;
+
+  position: absolute;
+
+  top: 0.8vw;
+
+  left: -3.2vw;
+
+  font-size: 1vw;
+
+  text-align: right;
+
+  font-weight: bold;
+
+}
+
+.subscribe-form label span {
+
+  color: #fcac45;
+
+}
+
+.subscribe-form input:focus + label {
+
+  color:#161613;
+
+  
+
+}
+
+.subscribe-form input:invalid {
+
+  box-shadow: none;
+
+}
+
+.subscribe-form input:valid {
+
+  border: 1px solid #161613;
+
+}
+
+
+
+.subscribe-form input:invalid:not(:focus):not(:placeholder-shown) {
+
+  border: 1px solid #d3362a;
+
+}
+
+.subscribe-form input:invalid:not(:focus):not(:placeholder-shown) + label {
+
+  left: -62px;
+
+  font-size: 12px;
+
+}
+
+@media only screen and (max-width : 480px) {
+
+
+
+  .popWindow{
+
+    display: none;
+
+    background-color: #0baa9d;
+
+    color: #fff;
+
+    width: 64vw;
+
+    height:65vw;
+
+    position: fixed;
+
+    bottom:-4vw;
+
+    
+
+    text-align: center;
+
+    border: 2px solid #023531;
+
+    padding-left:3.7vw;
+
+    border-radius: 8px;
+
+    z-index:1000000000000;
+
+    border-bottom:none;
+
+  }
+
+
+
+
+
+  .subscribe_window{
+
+    margin-bottom: -4vw;
+
+  }
+
+
+
+/* Кнопка закрыть всплывающее окно */
+
+.close-btn {
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  font-size: 7vw;
+
+  line-height: 2vw;
+
+  cursor: pointer;
+
+  color: rgb(100, 99, 99);
+
+  padding: 0.5vw;
+
+  margin-bottom:1.5vw;
+
+}
+
+/* Просто текст */
+
+.subscribe_window .subcsribe-text {
+
+  font-size: 3vw;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: #fff;
+
+  margin: 2.5vw 0;
+
+  position: relative;
+
+  padding: 0;
+
+  z-index: 10;
+
+  text-indent: 0vw;
+
+  font-weight: bold;
+
+}
+
+/* Текст */
+
+.subscribe_window .req-fields {
+
+  color: white;
+
+  text-align: center;
+
+  font-size: 3vw;
+
+}
+
+/* Стили формы */
+
+.subscribe-form {
+
+  width: 100%;
+
+  max-width: 300px;
+
+  margin: 0 auto;
+
+}
+
+.subscribe-form div {
+
+  position: relative;
+
+}
+
+.subscribe-form input {
+
+  border: 1px solid #3d3d3d;
+
+  width: 45vw;
+
+  height:5vw;
+
+  font-family: Mons;
+
+  font-size: 2vw;
+
+  padding: 0.3vw 0.5vw;
+
+  margin-bottom: 3vw;
+
+  margin-left:15vw;
+
+  outline: none;
+
+  background: #2e2e2b;
+
+  color: #fff;
+
+  border-radius: 4px;
+
+}
+
+.btn {
+
+  color: #fff;
+
+  background-color: #fcac45;
+
+  text-align: center;
+
+  font-size: 1.5vw;
+
+  border: 1px solid #fcac45;
+
+  box-shadow: none;
+
+  display: inline-block;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  -webkit-transition: 0.4s;
+
+  transition: 0.4s;
+
+}
+
+.btn:hover, .btn:focus {
+
+  background-color: #fcac45;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+}
+
+.subscribe-form .btn {
+
+  font-size: 3vw;
+
+  border: none;
+
+  width: 40vw;
+
+  height:5vw;
+
+  margin-top:1.5vw;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  outline: none;
+
+  border-radius: 4px;
+
+}
+
+.subscribe-form .btn:hover {
+
+  background-color: #f3601c;
+
+}
+
+.subscribe-form .btn i {
+
+  font-size: 3vw;
+
+  margin-right: 0.5vw;
+
+}
+
+.subscribe-form label {
+
+  color: #fff;
+
+  position: absolute;
+
+  top: 1.5vw;
+
+  left: -1.7vw;
+
+  font-size: 3vw;
+
+  text-align: right;
+
+  font-weight: bold;
+
+}
+
+.subscribe-form label span {
+
+  color: #fcac45;
+
+}
+
+.subscribe-form input:focus + label {
+
+  color:#161613;
+
+  
+
+}
+
+.subscribe-form input:invalid {
+
+  box-shadow: none;
+
+}
+
+.subscribe-form input:valid {
+
+  border: 1px solid #161613;
+
+}
+
+
+
+.subscribe-form input:invalid:not(:focus):not(:placeholder-shown) {
+
+  border: 1px solid #d3362a;
+
+}
+
+
+
+
+
+.thank_you_window .thank_you_title {
+
+  font-family: "Titillium Web", sans-serif;
+
+  color: #fff;
+
+  font-size: 3.8vw;
+
+  margin-bottom: 2vw;
+
+  margin-top:3vw;
+
+  text-align: center;
+
+  margin-left:-3.5vw;
+
+  margin-right:0.5vw;
+
+  text-indent: 0;
+
+}
+
+.thank_you_window .thank_you_body {
+
+  font-family: Mons;
+
+  color: #fff;
+
+  font-size: 2.8vw;
+
+  margin-left:-3.5vw;
+
+  margin-right:1.3vw;
+
+  text-indent: 0;
+
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+ 
+
